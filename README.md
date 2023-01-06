@@ -28,3 +28,4 @@ https://select2.org/
 
 
 https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation
+https://www.nicesnippets.com/blog/laravel-9-cropper-js-crop-image-before-upload

@@ -21,8 +21,8 @@ return new class extends Migration
             $table->float('agility');
             $table->float('intelligence');
             $table->float('range');
-            $table->float('avatar');
-            $table->longText('description');
+            $table->string('avatar')->nullable();
+            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }

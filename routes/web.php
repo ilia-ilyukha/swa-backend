@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\IndexController;
-
+use App\Http\Controllers\Admin\HeroesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +23,7 @@ Auth::routes();
 Route::middleware(['role:admin'])->prefix('admin')->group(function () {
     
     Route::get('/', [IndexController::class, 'index']);
+    Route::get('/heroes', [HeroesController::class, 'index']);
 
 });
 

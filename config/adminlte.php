@@ -321,8 +321,12 @@ return [
         [
             'text'        => 'Heroes',
             'url'         => 'admin/heroes',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
+            'icon'        => 'far fa-fw fa-th',
+            'label_color' => 'success',
+        ],
+        [
+            'text'        => 'Blog',
+            'url'         => 'admin/posts',
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],

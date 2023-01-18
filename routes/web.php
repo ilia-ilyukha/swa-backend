@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\IndexController;
 use App\Http\Controllers\Admin\HeroesController;
+use App\Http\Controllers\Admin\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +25,8 @@ Route::middleware(['role:admin'])->prefix('admin')->group(function () {
     
     Route::get('/', [IndexController::class, 'index']);
     Route::get('/heroes', [HeroesController::class, 'index']);
+    
+    Route::resource('/posts', BlogController::class);
 
 });
 
